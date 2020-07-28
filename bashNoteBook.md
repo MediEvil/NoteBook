@@ -1,10 +1,3 @@
----
-note:
-    id: ""
-    tags: []
-    modifiedAt: 2020-05-03T08:37:54.157Z
-    createdAt: 2020-05-03T08:37:52.173Z
----
 ## iTerm2 技巧
 
 1. macOS单独设置app的程序语言
@@ -60,4 +53,19 @@ zh_TW = Chinese Taiwan
 2. 刷新dock栏
 ```bash
 killall Dock
+```
+
+3. 查找端口占用并杀进程
+```bash
+lsof -i:8080
+```
+
+4. 给当前用户分配文件夹权限
+```bash
+sudo chown -R $(whoami) /usr/local
+```
+
+5. 打开windows压缩的zip包
+```bash
+ditto -x -k zip_file_path unzip_destinatio_path
 ```
